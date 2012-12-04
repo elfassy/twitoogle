@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/search/tweets.json?count=20&entities=false&lang=en&q=fajfiorjgdfgfgioarmnviovntngtuingat89tg5487345&result_type=mixed
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 4.4.0
+      Authorization:
+      - OAuth oauth_consumer_key="<twitter_consumer_key>", oauth_nonce="4f16015e4e1108022f08f32aca77800b",
+        oauth_signature="SraV4IY%2FhYnYVKo71zFzsd2fa8A%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1354639432", oauth_token="<twitter_oauth_token>", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1BY2Nlc3MtTGV2ZWw=":
+      - !binary |-
+        cmVhZA==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
+      !binary "TGFzdC1Nb2RpZmllZA==":
+      - !binary |-
+        VHVlLCAwNCBEZWMgMjAxMiAxNjo0Mzo0OSBHTVQ=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        VHVlLCAzMSBNYXIgMTk4MSAwNTowMDowMCBHTVQ=
+      !binary "UHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3JlLCBtdXN0LXJldmFsaWRhdGUsIHByZS1jaGVj
+        az0wLCBwb3N0LWNoZWNrPTA=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        Z3Vlc3RfaWQ9djElM0ExMzU0NjM5NDI5OTU4OTQ0MzE7IEV4cGlyZXM9VGh1
+        LCA0LURlYy0yMDE0IDE2OjQzOjQ5IEdNVDsgUGF0aD0vOyBEb21haW49LnR3
+        aXR0ZXIuY29t
+      !binary "WC1UcmFuc2FjdGlvbg==":
+      - !binary |-
+        MWU5NGNmNTc2NjFhZDFhYQ==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "RGF0ZQ==":
+      - !binary |-
+        VHVlLCAwNCBEZWMgMjAxMiAxNjo0Mzo0OSBHTVQ=
+      !binary "WC1SYXRlLUxpbWl0LUxpbWl0":
+      - !binary |-
+        MTgw
+      !binary "WC1SYXRlLUxpbWl0LVJlbWFpbmluZw==":
+      - !binary |-
+        MTY3
+      !binary "WC1SYXRlLUxpbWl0LVJlc2V0":
+      - !binary |-
+        MTM1NDYzOTY2Mg==
+      !binary "U2VydmVy":
+      - !binary |-
+        dGZl
+      !binary "Q29udGVudC1FbmNvZGluZw==":
+      - !binary |-
+        Z3ppcA==
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MjQw
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAAJSQQY7CMAxF7+JFVxVKC52WShEHGY2iqHFDUOtA4iAQ4u54
+        wWgWrGZlWfb3+/4PyGy5ZMwwfv/UkNGm6WhWZOssWxgfMMX1vCCjM4FgVBvV
+        1LDamwkOxrb/Umo7SGnafmi7ffs7M5kTjPC5ADVcCqa7DGd7mkNMJ+9mP/sQ
+        bVrpGuKVmDyXQN7ysGff7YZ+u+tEmHBOmI+mpEXkhxxoQmHpT0p10f+7Xi2W
+        vEaqBFAWNnw/o17DDV0llKU4NEgcOGDWjViZYiGWAJRk9rYh4fw17/8VPJ8v
+        AAAA//8DAE2KG3pkAQAA
+    http_version: 
+  recorded_at: Tue, 04 Dec 2012 16:43:52 GMT
+recorded_with: VCR 2.3.0
