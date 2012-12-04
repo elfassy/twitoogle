@@ -18,6 +18,6 @@ Twitoogle provides a simple search for Twitter posts
 
 ## Contacts
 * @michaelelfassy
-________________________
+
 
 License MIT
