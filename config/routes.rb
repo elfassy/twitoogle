@@ -1,3 +1,5 @@
 Twitoogle::Application.routes.draw do
-  root :to => "home#index"
+  get "/search/new", to: "search#new", as: :new_search
+  get "/search", to: "search#fetch"
+  root :to => "search#index"
 end

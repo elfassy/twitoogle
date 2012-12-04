@@ -1,0 +1,5 @@
+
+= form_tag new_search_path, method: "GET", remote:true  do |f|
+  .row.collapse
+    .ten.mobile-three.columns= text_field_tag :q, params[:q], placeholder: "Search Twitter"
+    .two.mobile-one.columns= submit_tag "Search", class: "button expand postfix"

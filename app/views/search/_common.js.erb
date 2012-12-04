@@ -1,0 +1,12 @@
+// $(".more_info").hide();
+$(".ajax-loader").hide();
+
+<% if @twitter_posts.present? %>
+  $(".no_results_found").remove();
+<% else %>
+  $(".show_more_link").hide();
+<% end %>
+
+<% unless @example_page %>
+  $('.post .bubble').replaceText(/(<%=j params[:q].split(" ").join("|") %>)\b/gi, '<span class="highlight">$1</span>');
+<% end %>

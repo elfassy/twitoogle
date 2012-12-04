@@ -1,38 +1,33 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require foundation
- *= require_tree .
-*/
-.brand {
-  float: left;
-  padding-right: 8px;
+@import "foundation/common/ratios";
+@import "foundation";
+@import "search";
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 20px;
 }
-ul.nav {
-  list-style: none;
-  margin: 0 0 2em;
-  padding: 0;
+.logo{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-align: center;
+  a{
+    color: #000;
+    &:hover{
+      border-bottom: 2px solid #000;
+    }
+  }
+
 }
-ul.nav li {
-  display: inline;
+
+//added to foundation
+.container{
+  padding: 20px 0px;
 }
-#flash_notice, #flash_alert {
-  padding: 5px 8px;
-  margin: 10px 0;
+.alert-box{
+  text-align:center;
 }
-#flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
+.centered{
+  text-align: center;
 }
-#flash_alert {
-  background-color: #FCC;
-  border: solid 1px #C66;
-}
+

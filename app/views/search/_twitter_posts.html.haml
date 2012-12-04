@@ -1,0 +1,21 @@
+- if @twitter_posts.present?
+  - for post in @twitter_posts
+    .post
+      .row
+        .one.mobile-one.columns
+          = image_tag post.user.profile_image_url
+        .eleven.mobile-three.columns
+          .bubble
+            = link_to post.user.name, "http://twitter.com/#{post.user.screen_name}"
+            \:
+            = post.text
+            .post_date{style: "text-align:right;color:#888;"}
+              = l post.created_at, format: :long
+            - if Rails.env.test?
+              .post_id= post.id
+
+- else
+  .row.no_results_found
+    .twelve.columns.centered
+      %h4 Unfortunately you search returned no new results. Try something with more zaz!  
+

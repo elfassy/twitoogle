@@ -1,0 +1,16 @@
+- if @example_page
+  .row
+    .ten.columns.centered
+      .more_info= render "more_info"
+
+- else
+
+  .row
+    .twelve.columns
+      #twitter_posts= render "twitter_posts"
+
+
+  .row
+    .twelve.columns
+      .ajax-loader= image_tag "ajax-loader.gif" #hidden by css
+      = link_to "Show me more tweets, please.", search_path(d: "older", q: params[:q]), class: "show_more_link button twelve", remote: true
