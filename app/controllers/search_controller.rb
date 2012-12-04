@@ -25,7 +25,7 @@ class SearchController < ApplicationController
       # https://dev.twitter.com/docs/api/1.1/get/search/tweets
       # |_ max_id: Returns results with an ID less than (that is, older than) or equal to the specified ID.
       # |_ since_id: Returns results with an ID greater than (that is, more recent than) the specified ID, starting with latest results. 
-      oldest_id = session[:oldest_id].blank? || @example_page ? nil : session[:oldest_id]
+      oldest_id = session[:oldest_id].blank? ? nil : session[:oldest_id]
       options.merge!(max_id: oldest_id - 1 ) if params[:d] == "older" && oldest_id
 
       begin

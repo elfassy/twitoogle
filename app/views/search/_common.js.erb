@@ -8,5 +8,5 @@ $(".ajax-loader").hide();
 <% end %>
 
 <% unless @example_page %>
-  $('.post .bubble').replaceText(/(<%=j params[:q].split(" ").join("|") %>)\b/gi, '<span class="highlight">$1</span>');
+  $('.post .bubble').replaceText(/(<%=j params[:q].gsub(/[\"\']/,"").gsub(/\s+/,"|") %>)\b/gi, '<span class="highlight">$1</span>');
 <% end %>

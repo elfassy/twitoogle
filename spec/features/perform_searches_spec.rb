@@ -9,6 +9,7 @@ describe "PerformSearches" do
       expect(page).to_not have_text("Unfortunately")
       expect(page).to have_text("Example")
   end
+  
   context "search form",js: true do
     it "shows search examples given empty search query" do
       fill_in "q", with: ""
