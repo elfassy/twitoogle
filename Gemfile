@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 gem 'thin'
 gem 'rails', '3.2.9'
 gem 'sqlite3'
-
+gem 'foreman'
 # Twitter API
 gem 'twitter'
 
@@ -19,6 +19,7 @@ gem "haml", ">= 3.1.6"
 group :development do
   gem "haml-rails", ">= 0.3.4"
   gem "pry" 
+  gem 'heroku'
 end
 
 gem "rspec-rails", group: [:test, :development]

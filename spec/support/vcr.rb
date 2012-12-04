@@ -4,10 +4,10 @@ VCR.configure do |c|
   c.allow_http_connections_when_no_cassette = true
   c.ignore_localhost = true
 
-  c.filter_sensitive_data("<twitter_consumer_key>") {  ENV_CONFIG["twitter"]["consumer_key"] }
-  c.filter_sensitive_data("<twitter_consumer_secret>") {  ENV_CONFIG["twitter"]["consumer_secret"]}
-  c.filter_sensitive_data("<twitter_oauth_token>") {  ENV_CONFIG["twitter"]["oauth_token"]}
-  c.filter_sensitive_data("<twitter_oauth_token_secret>") {  ENV_CONFIG["twitter"]["oauth_token_secret"]}
+  c.filter_sensitive_data("<twitter_consumer_key>") {  ENV["twitter_consumer_key"] }
+  c.filter_sensitive_data("<twitter_consumer_secret>") {  ENV["twitter_consumer_secret"]}
+  c.filter_sensitive_data("<twitter_oauth_token>") {  ENV["twitter_oauth_token"]}
+  c.filter_sensitive_data("<twitter_oauth_token_secret>") {  ENV["twitter_oauth_token_secret"]}
 end
 
 RSpec.configure do |c|
