@@ -16,6 +16,12 @@ describe "PerformSearches" do
       click_button "Search"
       expect(page).to have_text("Example")
     end
+    it "shows error message on Twitter exception" do
+      fill_in "q", with: "#ROR"
+      click_button "Search"
+      Twitter.should_receive(:search).and_raise(Twitter::Error::TooManyRequests)
+      expect(page).to have_text("difficulty connecting")
+    end
     it "shows error message given no results found", vcr:true do
       fill_in "q", with: "fajfiorjgdfgfgioarmnviovntngtuingat89tg5487345"
       click_button "Search"
