@@ -27,6 +27,10 @@ $bubble_background: #FEFEFE;
   vertical-align: top;
   width: 100%;
   float: left;
+  a.text_link{
+    color: #343434;
+    &:hover{ text-decoration: underline;}
+  }
 }
 .bubble::before {
   background-color: $bubble_background;

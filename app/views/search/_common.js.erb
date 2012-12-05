@@ -8,5 +8,7 @@ $(".ajax-loader").hide();
 <% end %>
 
 <% unless @example_page %>
-  $('.post .bubble').replaceText(/(<%=j params[:q].gsub(/[\"\']/,"").gsub(/\s+/,"|") %>)/gi, '<span class="highlight">$1</span>');
+  $('.post .bubble')
+    .replaceText(/(<%=j params[:q].gsub(/[\"\']/,"").gsub(/\s+/,"|") %>)/gi, '<span class="highlight">$1</span>')
+    .replaceText(/(\bhttp\:\/\/.+\.[^\s]+)/, '<a href="$1" class="text_link">$1</a>');
 <% end %>
