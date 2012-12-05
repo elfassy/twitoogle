@@ -12,9 +12,6 @@
     = stylesheet_link_tag :application, :media => "all"
   %body
     .container
-      .row
-        .columns.eight.centered
-          = render "layouts/messages"
       = yield
 
     = javascript_include_tag :application

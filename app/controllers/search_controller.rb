@@ -34,8 +34,8 @@ class SearchController < ApplicationController
         flash[:error] = "Seems like we're having some difficulty connecting to Twitter. Please try again in a few minutes."
         Rails.logger.warn("Twitter Error: #{error}")
       end
-        
-      session[:oldest_id] = @twitter_posts.try(:empty?) ? nil : @twitter_posts.last.id 
+
+      session[:oldest_id] = @twitter_posts.nil? || @twitter_posts.empty? ? nil : @twitter_posts.last.id 
 
     else
       @twitter_posts = nil

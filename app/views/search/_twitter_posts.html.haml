@@ -17,5 +17,8 @@
 - else
   .row.no_results_found
     .twelve.columns.centered
-      %h4 Unfortunately you search returned no new results. Try something with more zaz!  
-
+      - if flash.empty?
+        %h4 Unfortunately you search returned no new results. Try something with more zaz!  
+      - else
+        = render "layouts/messages"
+      
